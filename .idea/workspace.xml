@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1535c95-0c16-417e-a9cd-c5960fabffa9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/estoque/ws/AutorizacaoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/estoquews/br/com/caelum/estoque/ws/EstoqueWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/estoquews/br/com/caelum/estoque/ws/EstoqueWS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/estoque/ws/EstoqueWS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/estoque/ws/EstoqueWS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +38,15 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/br/com/caelum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MeusProjetos/Ola-Mundo" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.caelum.estoque.ws" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brunamaria\Documents\Workspace\estoquews\src\br\com\caelum" />
     </key>
@@ -101,46 +107,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="476" y="194" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1366.728@0.0.1366.728" timestamp="1591124178625" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1591127960639">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591207933183">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591127960639" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1591127960638">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591207933183" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591207939930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591127960638" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1591127960638">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591207939930" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591207939930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591127960638" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1591127960639">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591207939930" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591207939930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591127960639" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1591127960446">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591207939930" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591207939930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591127960446" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1591127960446">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591207939930" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1591128650327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591127960446" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1591127960446">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591128650327" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1591128650327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591127960446" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1591127960446">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591128650327" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1591128650327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591127960446" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591128650327" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1591128650327">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591128650327" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1591112597770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591112597770" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591097502303">
+    <state x="404" y="105" width="540" height="524" key="StructurePopup" timestamp="1591182265345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591097502303" />
+    <state x="404" y="105" width="540" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1591182265345" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591181695373">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591181695373" />
     <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591113523200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -149,5 +163,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="197" y="100" width="972" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1591113833939" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1591181939382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591181939382" />
   </component>
 </project>
