@@ -4,12 +4,12 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 import java.util.List;
 
 import br.com.caelum.estoque.modelo.item.*;
+import br.com.caelum.estoque.modelo.usuario.AutorizacaoException;
 import br.com.caelum.estoque.modelo.usuario.TokenDao;
 import br.com.caelum.estoque.modelo.usuario.TokenUsuario;
 
@@ -33,14 +33,18 @@ public class EstoqueWS {
 
     @WebMethod(operationName = "cadastrarItens")
     @WebResult(name = "item")
-    public Item cadastrarItem(@WebParam(name = "tokenUsuario", header = true) TokenUsuario token,
-                              @WebParam(name = "item") Item item) throws AutorizacaoException {
+    public Item cadastrarItem(
+            @WebParam(name = "tokenUsuario", header = true) TokenUsuario token,
+            @WebParam(name = "item") Item item)
+            throws AutorizacaoException {
 
-        System.out.println("Cadastrando " + item + ", " + token);
-        boolean valido = new TokenDao().ehValido(token);
-        if (!valido) {
-            throw new AutorizacaoException("Token invalido");
+        System.out.println("Cadastrando item " + item + ", Token: " + token);
+        if (!new TokenDao().ehValido(token)) {
+            throw new AutorizacaoException("Autorizacao falhou");
         }
+
+        //novo
+        new ItemValidador(item).validate();
 
         this.dao.cadastrar(item);
         return item;
